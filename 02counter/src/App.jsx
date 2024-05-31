@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [counter, setCounter] = useState(true)
+  const [counter, setCounter] = useState(0)
   // let counter = 15
 
   const addValue = () => {
@@ -19,7 +19,11 @@ function App() {
     setCounter((prevCounter) => prevCounter + 1)
   }
   const removeValue = () => {
-    setCounter(counter-1)
+    // setCounter(counter-1)
+    setCounter((remCounter) => remCounter - 1)
+    setCounter((remCounter) => remCounter - 1)
+    setCounter((remCounter) => remCounter - 1)
+    setCounter((remCounter) => remCounter - 1)
   }
 
   return (
